@@ -16,6 +16,9 @@
 		0BB760411673314200CB8145 /* libWordNetDictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB760281673314100CB8145 /* libWordNetDictionary.a */; };
 		0BB760471673314200CB8145 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BB760451673314200CB8145 /* InfoPlist.strings */; };
 		0BB7604A1673314200CB8145 /* WordNetDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB760491673314200CB8145 /* WordNetDictionaryTests.m */; };
+		0BB7605A1673379800CB8145 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB760551673379800CB8145 /* FMDatabase.m */; };
+		0BB7605B1673379800CB8145 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB760571673379800CB8145 /* FMDatabaseAdditions.m */; };
+		0BB7605C1673379800CB8145 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB760591673379800CB8145 /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,13 @@
 		0BB760461673314200CB8145 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0BB760481673314200CB8145 /* WordNetDictionaryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordNetDictionaryTests.h; sourceTree = "<group>"; };
 		0BB760491673314200CB8145 /* WordNetDictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordNetDictionaryTests.m; sourceTree = "<group>"; };
+		0BB760541673379800CB8145 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = External/FMDB/src/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		0BB760551673379800CB8145 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = External/FMDB/src/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		0BB760561673379800CB8145 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = External/FMDB/src/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		0BB760571673379800CB8145 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = External/FMDB/src/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		0BB760581673379800CB8145 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = External/FMDB/src/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		0BB760591673379800CB8145 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = External/FMDB/src/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		0BB7605D1673388800CB8145 /* WordNetDictionary.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = WordNetDictionary.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,7 @@
 		0BB7602D1673314100CB8145 /* WordNetDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				0BB760531673373800CB8145 /* FMDB */,
 				0BB760301673314100CB8145 /* WordNetDictionary.h */,
 				0BB760321673314100CB8145 /* WordNetDictionary.m */,
 				0BB7602E1673314100CB8145 /* Supporting Files */,
@@ -121,6 +132,7 @@
 		0BB7602E1673314100CB8145 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0BB7605D1673388800CB8145 /* WordNetDictionary.sqlite */,
 				0BB7602F1673314100CB8145 /* WordNetDictionary-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -143,6 +155,19 @@
 				0BB760451673314200CB8145 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BB760531673373800CB8145 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				0BB760541673379800CB8145 /* FMDatabase.h */,
+				0BB760551673379800CB8145 /* FMDatabase.m */,
+				0BB760561673379800CB8145 /* FMDatabaseAdditions.h */,
+				0BB760571673379800CB8145 /* FMDatabaseAdditions.m */,
+				0BB760581673379800CB8145 /* FMResultSet.h */,
+				0BB760591673379800CB8145 /* FMResultSet.m */,
+			);
+			name = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BB760331673314100CB8145 /* WordNetDictionary.m in Sources */,
+				0BB7605A1673379800CB8145 /* FMDatabase.m in Sources */,
+				0BB7605B1673379800CB8145 /* FMDatabaseAdditions.m in Sources */,
+				0BB7605C1673379800CB8145 /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
