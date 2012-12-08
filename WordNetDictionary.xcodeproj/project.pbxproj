@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB7602C1673314100CB8145 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB7602B1673314100CB8145 /* Foundation.framework */; };
+		0BB760311673314100CB8145 /* WordNetDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0BB760301673314100CB8145 /* WordNetDictionary.h */; };
+		0BB760331673314100CB8145 /* WordNetDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB760321673314100CB8145 /* WordNetDictionary.m */; };
+		0BB7603B1673314200CB8145 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB7603A1673314200CB8145 /* SenTestingKit.framework */; };
+		0BB7603D1673314200CB8145 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB7603C1673314200CB8145 /* UIKit.framework */; };
+		0BB7603E1673314200CB8145 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB7602B1673314100CB8145 /* Foundation.framework */; };
+		0BB760411673314200CB8145 /* libWordNetDictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB760281673314100CB8145 /* libWordNetDictionary.a */; };
+		0BB760471673314200CB8145 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BB760451673314200CB8145 /* InfoPlist.strings */; };
+		0BB7604A1673314200CB8145 /* WordNetDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB760491673314200CB8145 /* WordNetDictionaryTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BB7603F1673314200CB8145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BB7601F1673314100CB8145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BB760271673314100CB8145;
+			remoteInfo = WordNetDictionary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0BB760261673314100CB8145 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				0BB760311673314100CB8145 /* WordNetDictionary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0BB760281673314100CB8145 /* libWordNetDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWordNetDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB7602B1673314100CB8145 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0BB7602F1673314100CB8145 /* WordNetDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordNetDictionary-Prefix.pch"; sourceTree = "<group>"; };
+		0BB760301673314100CB8145 /* WordNetDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordNetDictionary.h; sourceTree = "<group>"; };
+		0BB760321673314100CB8145 /* WordNetDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordNetDictionary.m; sourceTree = "<group>"; };
+		0BB760391673314200CB8145 /* WordNetDictionaryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordNetDictionaryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB7603A1673314200CB8145 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0BB7603C1673314200CB8145 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0BB760441673314200CB8145 /* WordNetDictionaryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordNetDictionaryTests-Info.plist"; sourceTree = "<group>"; };
+		0BB760461673314200CB8145 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BB760481673314200CB8145 /* WordNetDictionaryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordNetDictionaryTests.h; sourceTree = "<group>"; };
+		0BB760491673314200CB8145 /* WordNetDictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordNetDictionaryTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BB760251673314100CB8145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB7602C1673314100CB8145 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB760351673314200CB8145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB7603B1673314200CB8145 /* SenTestingKit.framework in Frameworks */,
+				0BB7603D1673314200CB8145 /* UIKit.framework in Frameworks */,
+				0BB7603E1673314200CB8145 /* Foundation.framework in Frameworks */,
+				0BB760411673314200CB8145 /* libWordNetDictionary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BB7601D1673314100CB8145 = {
+			isa = PBXGroup;
+			children = (
+				0BB7602D1673314100CB8145 /* WordNetDictionary */,
+				0BB760421673314200CB8145 /* WordNetDictionaryTests */,
+				0BB7602A1673314100CB8145 /* Frameworks */,
+				0BB760291673314100CB8145 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BB760291673314100CB8145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BB760281673314100CB8145 /* libWordNetDictionary.a */,
+				0BB760391673314200CB8145 /* WordNetDictionaryTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BB7602A1673314100CB8145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BB7602B1673314100CB8145 /* Foundation.framework */,
+				0BB7603A1673314200CB8145 /* SenTestingKit.framework */,
+				0BB7603C1673314200CB8145 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BB7602D1673314100CB8145 /* WordNetDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				0BB760301673314100CB8145 /* WordNetDictionary.h */,
+				0BB760321673314100CB8145 /* WordNetDictionary.m */,
+				0BB7602E1673314100CB8145 /* Supporting Files */,
+			);
+			path = WordNetDictionary;
+			sourceTree = "<group>";
+		};
+		0BB7602E1673314100CB8145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BB7602F1673314100CB8145 /* WordNetDictionary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BB760421673314200CB8145 /* WordNetDictionaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BB760481673314200CB8145 /* WordNetDictionaryTests.h */,
+				0BB760491673314200CB8145 /* WordNetDictionaryTests.m */,
+				0BB760431673314200CB8145 /* Supporting Files */,
+			);
+			path = WordNetDictionaryTests;
+			sourceTree = "<group>";
+		};
+		0BB760431673314200CB8145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BB760441673314200CB8145 /* WordNetDictionaryTests-Info.plist */,
+				0BB760451673314200CB8145 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BB760271673314100CB8145 /* WordNetDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB7604D1673314200CB8145 /* Build configuration list for PBXNativeTarget "WordNetDictionary" */;
+			buildPhases = (
+				0BB760241673314100CB8145 /* Sources */,
+				0BB760251673314100CB8145 /* Frameworks */,
+				0BB760261673314100CB8145 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordNetDictionary;
+			productName = WordNetDictionary;
+			productReference = 0BB760281673314100CB8145 /* libWordNetDictionary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0BB760381673314200CB8145 /* WordNetDictionaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB760501673314200CB8145 /* Build configuration list for PBXNativeTarget "WordNetDictionaryTests" */;
+			buildPhases = (
+				0BB760341673314200CB8145 /* Sources */,
+				0BB760351673314200CB8145 /* Frameworks */,
+				0BB760361673314200CB8145 /* Resources */,
+				0BB760371673314200CB8145 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB760401673314200CB8145 /* PBXTargetDependency */,
+			);
+			name = WordNetDictionaryTests;
+			productName = WordNetDictionaryTests;
+			productReference = 0BB760391673314200CB8145 /* WordNetDictionaryTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BB7601F1673314100CB8145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "James Weinert";
+			};
+			buildConfigurationList = 0BB760221673314100CB8145 /* Build configuration list for PBXProject "WordNetDictionary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0BB7601D1673314100CB8145;
+			productRefGroup = 0BB760291673314100CB8145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BB760271673314100CB8145 /* WordNetDictionary */,
+				0BB760381673314200CB8145 /* WordNetDictionaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BB760361673314200CB8145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB760471673314200CB8145 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BB760371673314200CB8145 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BB760241673314100CB8145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB760331673314100CB8145 /* WordNetDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB760341673314200CB8145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB7604A1673314200CB8145 /* WordNetDictionaryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB760401673314200CB8145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BB760271673314100CB8145 /* WordNetDictionary */;
+			targetProxy = 0BB7603F1673314200CB8145 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0BB760451673314200CB8145 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BB760461673314200CB8145 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BB7604B1673314200CB8145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0BB7604C1673314200CB8145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BB7604E1673314200CB8145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/WordNetDictionary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordNetDictionary/WordNetDictionary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0BB7604F1673314200CB8145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/WordNetDictionary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordNetDictionary/WordNetDictionary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0BB760511673314200CB8145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordNetDictionary/WordNetDictionary-Prefix.pch";
+				INFOPLIST_FILE = "WordNetDictionaryTests/WordNetDictionaryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0BB760521673314200CB8145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordNetDictionary/WordNetDictionary-Prefix.pch";
+				INFOPLIST_FILE = "WordNetDictionaryTests/WordNetDictionaryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BB760221673314100CB8145 /* Build configuration list for PBXProject "WordNetDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB7604B1673314200CB8145 /* Debug */,
+				0BB7604C1673314200CB8145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BB7604D1673314200CB8145 /* Build configuration list for PBXNativeTarget "WordNetDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB7604E1673314200CB8145 /* Debug */,
+				0BB7604F1673314200CB8145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BB760501673314200CB8145 /* Build configuration list for PBXNativeTarget "WordNetDictionaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB760511673314200CB8145 /* Debug */,
+				0BB760521673314200CB8145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BB7601F1673314100CB8145 /* Project object */;
+}

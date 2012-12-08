@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'WordNetDictionary' target in the 'WordNetDictionary' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
