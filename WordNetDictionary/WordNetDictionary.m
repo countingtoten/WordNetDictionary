@@ -11,16 +11,8 @@
 
 #import "FMDatabase.h"
 
-typedef NS_ENUM(NSInteger, WordNetPartOfSpeech) {
-    WordNetNoun,
-    WordNetVerb,
-    WordNetAdjective,
-    WordNetAdverb
-};
-
 @interface WordNetDictionary ()
 @property (readonly, strong, nonatomic) FMDatabase *db;
-
 - (NSString *)applicationDocumentsDirectory;
 @end
 
@@ -50,7 +42,7 @@ typedef NS_ENUM(NSInteger, WordNetPartOfSpeech) {
     return [self searchForWord:searchText withLimit:50];
 }
 
-- (NSArray *)searchForWord:(NSString *)searchText withLimit:(int)limit {
+- (NSArray *)searchForWord:(NSString *)searchText withLimit:(NSUInteger)limit {
     NSString *searchTextTrimmed = [searchText stringByReplacingOccurrencesOfString:@"-" withString:@" "];
     searchTextTrimmed = [searchTextTrimmed stringByReplacingOccurrencesOfString:@"\"" withString:@" "];
     if ([searchTextTrimmed isEqualToString:@""]) {
@@ -58,14 +50,14 @@ typedef NS_ENUM(NSInteger, WordNetPartOfSpeech) {
     }
     
     NSMutableArray *dbResults = [NSMutableArray array];
-    FMResultSet *fineResults = [self.db executeQuery:@"SELECT lemma FROM words WHERE lemma MATCH ? LIMIT ?;", searchTextTrimmed, [NSNumber numberWithInt:limit]];
+    FMResultSet *fineResults = [self.db executeQuery:@"SELECT lemma FROM words WHERE lemma MATCH ? LIMIT ?;", searchTextTrimmed, [NSNumber numberWithUnsignedInteger:limit]];
     
     while ([fineResults next]) {
         [dbResults addObject:[fineResults stringForColumn:@"lemma"]];
     }
     
     if ([dbResults count] < limit) {
-        FMResultSet *broadResults = [self.db executeQuery:@"SELECT lemma FROM words WHERE lemma MATCH ? LIMIT ?;", [NSString stringWithFormat:@"%@*", searchTextTrimmed], [NSNumber numberWithInt:(limit - [dbResults count])]];
+        FMResultSet *broadResults = [self.db executeQuery:@"SELECT lemma FROM words WHERE lemma MATCH ? LIMIT ?;", [NSString stringWithFormat:@"%@*", searchTextTrimmed], [NSNumber numberWithUnsignedInteger:(limit - [dbResults count])]];
         
         while ([broadResults next]) {
             [dbResults addObject:[broadResults stringForColumn:@"lemma"]];
@@ -73,7 +65,7 @@ typedef NS_ENUM(NSInteger, WordNetPartOfSpeech) {
     }
     
     if ([dbResults count] < limit) {
-        FMResultSet *broadestResults = [self.db executeQuery:@"SELECT lemma FROM words WHERE lemma MATCH ? LIMIT ?;", [NSString stringWithFormat:@"*%@*", searchTextTrimmed], [NSNumber numberWithInt:(limit - [dbResults count])]];
+        FMResultSet *broadestResults = [self.db executeQuery:@"SELECT lemma FROM words WHERE lemma MATCH ? LIMIT ?;", [NSString stringWithFormat:@"*%@*", searchTextTrimmed], [NSNumber numberWithUnsignedInteger:(limit - [dbResults count])]];
         
         while ([broadestResults next]) {
             [dbResults addObject:[broadestResults stringForColumn:@"lemma"]];
@@ -186,9 +178,9 @@ typedef NS_ENUM(NSInteger, WordNetPartOfSpeech) {
     return definitionsDictionary;
 }
 
-- (NSArray *)randomWords:(int )limit {
+- (NSArray *)randomWords:(NSUInteger)limit {
     NSMutableArray *dbResults = [NSMutableArray array];
-    FMResultSet *fineResults = [self.db executeQuery:@"SELECT lemma FROM words ORDER BY RANDOM() LIMIT ?;", [NSNumber numberWithInt:limit]];
+    FMResultSet *fineResults = [self.db executeQuery:@"SELECT lemma FROM words ORDER BY RANDOM() LIMIT ?;", [NSNumber numberWithUnsignedInteger:limit]];
     
     while ([fineResults next]) {
         [dbResults addObject:[fineResults stringForColumn:@"lemma"]];
