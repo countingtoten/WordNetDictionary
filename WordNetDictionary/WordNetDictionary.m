@@ -100,7 +100,6 @@
 
     int wordid = 0;
     while ([wordSearchResults next]) {
-        NSLog(@"lemma: %@, wordid: %@", [wordSearchResults stringForColumn:@"lemma"], [wordSearchResults stringForColumn:@"wordid"]);
         if ([[wordSearchResults stringForColumn:@"lemma"] isEqualToString:wordToDefine]) {
             wordid = [wordSearchResults intForColumn:@"wordid"];
             break;
